@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div align="center">
+    <h2>Please fill up the details</h2>
+    <br>
+    <form action="{{url_for('signup')}}" method="post">
+      <input type="text" placeholder="Username" name="username" value="{{
+        request.form.username }}">
+       <input type="password" placeholder="Password" name="password" value="{{
+        request.form.password }}">
+        <input type="password" placeholder="Confirm Password" name="password2" value="{{
+            request.form.password2 }}">
+        <input type="email" placeholder="Email" name="email" value="{{
+            request.form.email }}">
+      <input class="btn btn-default" type="submit" value="Sign up">
+    </form>
+    <p>Already have account? <a href="/login">Login</a></p>
+  </div>
+      
+{% endblock %}

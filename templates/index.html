@@ -1,0 +1,40 @@
+
+{% include "_navbar.html" %}
+{% extends "base.html" %}
+{% block content %}
+    <div class="wrapper">
+        <div class="box a">
+            <h3>Welcome to IICS auto</h3>
+            <form action="{{url_for('index')}}" method="post">
+                <div>
+                 <input type="text" placeholder="Enter RFC number" name="rfc" value="{{
+                     request.form.rfc }}">
+                </div>
+                <div>
+                 <input type="text" placeholder="Enter RFC number" name="rfc" value="{{
+                    request.form.rfc }}">
+                </div>
+                <div>
+                 <input type="text" placeholder="Enter RFC number" name="rfc" value="{{
+                    request.form.rfc }}">
+                </div>
+                <div>
+                    <input id="btnme" type="submit" value="Export">
+                </div>
+               
+            </form>
+        </div>
+        <div class="box b"><h3>Posts:</h3>
+            {% for post in posts %}
+              <strong>Title:</strong> {{ post.title }} <br>
+              <strong>Post:</strong> {{ post.details }} <br>
+            <br>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}
+
+     
+   
+ 
