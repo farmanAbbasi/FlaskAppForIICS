@@ -3,25 +3,44 @@
   <head>
     <title>IICS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="static/style.css?q=22cccccdd2xxv0" rel="stylesheet" media="screen">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="static/style.css?q=szsklssdssdss" rel="stylesheet" media="screen">
     <script src="static/bootstrap.min.js"></script>
+   
   </head>
 
-  <body >
-    <div class="mycontainer">
+  <body class="background">
+    <div>
+      <!-- flashes -->
+     <div align="center">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+         {% for category, message in messages %}
+         <div class="alert alert-{{ category}} alert-dismissible " role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>{{ message }}
+          </div>
+         {% endfor %}
+        {% endif %}
+        {% endwith %}
+     </div>
+    
+
+      
       <!-- child template -->
       {% block content %}{% endblock %}
 
-      <!-- errors -->
-      {% if error %}
-        <p class="error"><strong>Error:</strong> {{ error }}</p>
-      {% endif %}
-
-      <!-- messages -->
-      {% for message in get_flashed_messages() %}
-        {{ message }}
-      {% endfor %}
+       <!-- errors -->
+       {% if error %}
+       <div class="alert alert-danger alert-dismissible " align="center" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+          </button><strong>Error:</strong>{{ error }}
+        </div>
+     {% endif %}
+      
+      
     </div>
   </body>
 </html>

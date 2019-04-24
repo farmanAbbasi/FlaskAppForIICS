@@ -1,0 +1,121 @@
+{
+  "name" : "job-1556095318149",
+  "sourceOrgId" : "37LrF8LEUIgdIL3efGsKeb",
+  "sourceOrgName" : "school",
+  "exportedObjects" : [ {
+    "objectGuid" : "eaSRajhMo0EjERd1O4aCsj",
+    "objectName" : "target_connection_to_flat",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0103QG0B000000000002"
+      },
+      "objectRefs" : [ "2N6lXTO3qzMdi3KvUyqDaO" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "5aOApUfkFtwdQ4nbZxfnKU",
+    "objectName" : "farman_new_project_march",
+    "objectType" : "Project",
+    "path" : "/Explore",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "dpcUCZlfsKilnEdqMlEzIC",
+    "objectName" : "new_mapping_flatFile_connection",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0103QG0B000000000003"
+      },
+      "objectRefs" : [ "2N6lXTO3qzMdi3KvUyqDaO" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "f6zb8ZK1VgqbK6fPvtsw0j",
+    "objectName" : "farman_new_mapping",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/farman_new_project_march",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0103QG17000000000002"
+      },
+      "objectRefs" : [ "eaSRajhMo0EjERd1O4aCsj", "dpcUCZlfsKilnEdqMlEzIC" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "2N6lXTO3qzMdi3KvUyqDaO",
+    "objectName" : "HSC-R90AF082",
+    "objectType" : "AgentGroup",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0103QG25000000000002"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  } ]
+}

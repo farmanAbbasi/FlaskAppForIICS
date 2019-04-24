@@ -1,8 +1,8 @@
 
 {% extends "base.html" %}
 {% block content %}
-<div align="center">
-  <h2>IICS login</h2>
+<div class="container" align="center">
+  <h2>IICS Login</h2>
   <br>
   <form action="{{url_for('login')}}" method="post">
     <input type="text" placeholder="Username" name="username" value="{{
@@ -11,7 +11,7 @@
       request.form.password }}">
     <input class="btn btn-default" type="submit" value="Login">
   </form>
-  <p>Don't have account? <a href="/signup">Sign up here</a></p>
+  <p style = "font-family:sans-serif;font-size:14px;">Don't have account? <a href="/signup">Sign up here</a></p>
 </div>
       
 {% endblock %}

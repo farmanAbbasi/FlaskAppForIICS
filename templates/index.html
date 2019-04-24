@@ -2,7 +2,7 @@
 {% include "_navbar.html" %}
 {% extends "base.html" %}
 {% block content %}
-    <div class="wrapper">
+    <div class="wrapper" id='indexWrapper'>
         <div class="box a">
             <h3>Welcome to IICS auto</h3>
             <form action="{{url_for('index')}}" method="post">
@@ -10,16 +10,24 @@
                  <input type="text" placeholder="Enter RFC number" name="rfc" value="{{
                      request.form.rfc }}">
                 </div>
+                
+            <div class="[ form-group ]">
+            <input type="checkbox" name="fancycheckboxdefault" id="fancy-checkbox-default" autocomplete="off" value="{{
+                request.form.fancycheckboxdefault}}" />
+            <div class="[ btn-group ]">
+                    <label for="fancy-checkbox-default" class="[ btn btn-default active ]" >
+                            Existing Project
+                        </label>
+                <label for="fancy-checkbox-default" class="[ btn btn-default ]" >
+                    <span class="[ glyphicon glyphicon-ok ]" style="line-height:1.42857143"></span>
+                    <span> </span>
+                </label>
+                
+            </div>
+        </div>   
+
                 <div>
-                 <input type="text" placeholder="Enter RFC number" name="rfc" value="{{
-                    request.form.rfc }}">
-                </div>
-                <div>
-                 <input type="text" placeholder="Enter RFC number" name="rfc" value="{{
-                    request.form.rfc }}">
-                </div>
-                <div>
-                    <input id="btnme" type="submit" value="Export">
+                 <input id="btnme" type="submit" value="Export">
                 </div>
                
             </form>

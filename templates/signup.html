@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div align="center">
+<div class="container" align="center">
     <h2>Please fill up the details</h2>
     <br>
     <form action="{{url_for('signup')}}" method="post">
@@ -15,7 +15,7 @@
             request.form.email }}">
       <input class="btn btn-default" type="submit" value="Sign up">
     </form>
-    <p>Already have account? <a href="/login">Login</a></p>
+    <p style = "font-family:sans-serif;font-size:14px;">Already have account? <a href="/login">Login</a></p>
   </div>
       
-{% endblock %}
+{% endblock %}>
